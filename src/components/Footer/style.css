@@ -20,10 +20,12 @@
     flex-direction: column;
     width: 100%;
 }
-.logo{
+.logo-img{
+    display: flex;
     width: inherit;
     align-items: top;
     justify-content: center;
+
 }
 #logo-name{
     width: 150px;

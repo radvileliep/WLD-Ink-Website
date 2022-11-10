@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='container-fluid footer'>
             <div className='container footer'>
                 <div className='row footer'>
-                    <div className='logo'>
+                    <div className='logo-img'>
                         <img src={tattoo} id='logo-name'/>
                     </div>
                     <div className="cards">

@@ -131,7 +131,6 @@ display: none;
     .container.navbar{
         position: sticky;
     }
-    
     .pages{
         display: flex;
         flex-direction: column;
@@ -141,7 +140,6 @@ display: none;
         right: -100%;
         top: -190px;
     }
-
     .pages.active {
         background-color: #f1eeea;
         opacity: 1;
@@ -161,12 +159,11 @@ display: none;
         width: 100%;
         flex-direction: column;
     }
-    
     .logo{
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(10%, 12%);
+        transform: translate(10%);
     }
 
     .menu-icon{
@@ -181,3 +178,8 @@ display: none;
     } 
 }
 
+@media screen and (max-width: 1100px) {
+    .pages{
+        flex-basis: 70%;
+    }
+}
