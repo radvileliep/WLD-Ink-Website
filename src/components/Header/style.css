@@ -1,0 +1,183 @@
+.container-fluid.navbar {
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #f1eeea;
+    justify-content: center;
+}
+.container.navbar{
+    width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    height: 80px;
+}
+.nav-list {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+.nav-item {
+    list-style: none;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: system-ui,"Segoe UI";
+    margin: 8px 22px;
+    padding: 1.6px 0;
+    color: #000;
+    position: relative;
+}
+
+.nav-item::after {
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #b69b74;
+}
+
+.nav-item:hover::after{
+    width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+    flex-direction: row;
+    height: 100%;
+}
+.pages{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+#tattoo-gun{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+.logo-name{
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    padding: 0 10px;
+    color: #000;
+    cursor: pointer;
+    margin: 0;
+}
+.navbar-button {
+    cursor: pointer;
+    background: none;
+    border-radius: 3px;
+    padding: 0.6rem 1.6rem;
+    text-align: center;
+    border: 2px solid #816843;
+    margin: 0.4rem 0.8rem;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.navbar-button > a{
+    font-family: 'Muli', sans-serif;;
+    font-size: 16px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #816843;
+    font-style: normal;
+}
+.navbar-button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.navbar-button:before{
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #816843;
+}
+.navbar-button:hover:before{
+    transition: 0.5s ease-in-out;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.navbar-button a:hover{
+    color: #FFF;
+}
+.menu-icon{
+display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .container.navbar{
+        position: sticky;
+    }
+    
+    .pages{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        right: -100%;
+        top: -190px;
+    }
+
+    .pages.active {
+        background-color: #f1eeea;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        z-index: 100;
+        height: 190px;
+        left: 0;
+        top: 80px;
+    }
+    .nav-item{
+    text-align: center;
+    padding: 0.6rem;
+    width: 100%;
+    margin: 0;
+    }
+    .nav-list{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(10%, 12%);
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 70%);
+        font-size: 1.8rem;
+        color: #816843;
+        cursor: pointer;
+    } 
+}
+
