@@ -3,7 +3,7 @@ import "./home.css"
 import heroImg from "../Images/img1.jpg"
 import { Link } from 'react-router-dom'
 import heroImg1 from "../Images/img-hero.jpg"
-import panImg from "../Images/pan2.jpg"
+import panImg from "../Images/pano.jpg"
 
 const Home = () => {
     return (
@@ -16,7 +16,7 @@ const Home = () => {
                         <h4 className='second-title'>Meet the new style perfection</h4>
                         <p className='par'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit at corporis ipsa, deserunt quam? Tenetur ex, placeat ad doloremque facilis dolore reprehenderit itaque iusto!</p>
                             <div className='hero-button'>
-                                <Link>
+                                <Link to="/" style={{ textDecoration: 'none' }}>
                                     <button className='read-more'>
                                         <p className="button-text2">READ MORE</p>
                                     </button>
@@ -41,6 +41,7 @@ const Home = () => {
             </div>
         </div>
 
+{/*GALLERY LINK SECTION*/}
         <section className='to-gal'>
             <img src={panImg} alt="pan-to-gallery" className='pan-gal'></img>
             <div className='container-fluid gal-link'>
@@ -49,17 +50,17 @@ const Home = () => {
                         <div className='empty'></div>
                         <div className='information'>
                             <h2 className='info-title'>
-                                Body as canvas <br /> Our best projects
+                                "Body as canvas" <br /> Our best projects
                             </h2>
                             <div className='info-wrap'>
                                 <p className='par-gal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus odio, semper in mi eget, tempus gravida lacus. Vivamus in cursus lectus. Nullam accumsan turpis erat, nec mollis purus molestie at. Pellentesque sed ligula elementum, luctus quam ut, feugiat libero.
                                 </p>
                                 <div className='link-wrap'>
-                                    <h4 className='link-gallery'>
-                                        <Link>
-
-                                        </Link>
-                                    </h4>
+                                    <Link to="/" style={{ textDecoration: 'none' }}>
+                                        <h4 className='link-gallery'>
+                                            View more 
+                                        </h4>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -68,6 +69,7 @@ const Home = () => {
             </div> 
         </section>
 
+{/*OUR TEAM SECTION*/}
 
 
 
