@@ -87,7 +87,7 @@ p {
     padding-top: 3rem;
 }
 
-.fa-facebook-f{
+.fa-facebook-f.footer{
     color: #b69b74;
     font-size: 1.5rem;
     flex: 12;
@@ -95,7 +95,7 @@ p {
     padding: 5px;
     margin: 20px 0 0 0;
 }
-.fa-instagram{
+.fa-instagram.footer{
     color: #b69b74; 
     flex: 12;
     width: 100%;

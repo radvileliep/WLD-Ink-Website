@@ -2,11 +2,11 @@
 import './App.css';
 import Header from "./components/Header/Header"
 import { Route, Routes } from "react-router-dom"
-import Home from "./Pages/Home"
-import Team from "./Pages/Team"
-import Gallery from "./Pages/Gallery"
-import Contacts from "./Pages/Contacts"
-import Booking from "./Pages/Booking"
+import Home from "./Pages/Home/Home"
+import Team from "./Pages/Team/Team"
+import Gallery from "./Pages/Gallery/Gallery"
+import Contacts from "./Pages/Contacts/Contacts"
+import Booking from "./Pages/Booking/Booking"
 import Footer from "./components/Footer/Footer"
 
 function App() {

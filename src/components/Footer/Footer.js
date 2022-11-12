@@ -44,10 +44,10 @@ const Footer = () => {
                         <div className='socials col-12'>
                             <div className='icon=wrap'>
                                 <a href='https://www.instagram.com/' target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-instagram footer"></i>
                                 </a>
                                 <a href='https://www.facebook.com/' target="_blank">
-                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-facebook-f footer"></i>
                                 </a>
                             </div>
                         </div>
