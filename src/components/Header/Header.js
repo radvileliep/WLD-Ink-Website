@@ -19,7 +19,7 @@ class Header extends Component {
 
                         <div className='logo'> 
                             <Link to="/" style={{ textDecoration: 'none' }}>
-                                <img src={tattoo} id='tattoo-gun'/>
+                                <img src={tattoo} id='tattoo-gun' alt="logo-tattoo"/>
                             </Link>
                             <Link to="/" style={{ textDecoration: 'none' }}>
                                 <h4 className='logo-name'>WLD Ink</h4>
@@ -45,7 +45,7 @@ class Header extends Component {
                             <div className='navbar-button'>
                                 <Link to='/booking'> Book us
                                 </Link>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>

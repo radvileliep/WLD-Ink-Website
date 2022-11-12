@@ -84,10 +84,8 @@ p {
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-top: 3rem;
 }
-
-
-
 
 .fa-facebook-f{
     color: #b69b74;
@@ -95,26 +93,17 @@ p {
     flex: 12;
     width: 100%;
     padding: 5px;
+    margin: 20px 0 0 0;
 }
 .fa-instagram{
     color: #b69b74; 
     flex: 12;
     width: 100%;
     padding: 5px;
-    margin: 20px 0 0 0;
     font-size: 1.6rem;
 }
 .icon-wrap{
     padding-bottom: 7.6rem;
-}
-.icon-wrap::before{
-    content: '';
-    position: absolute;
-    background: #b69b74;
-    bottom: 0rem;
-    left: 50%;
-    width: 2px;
-    height: 90px;
 }
 .container-fluid.end{
     display: flex;
@@ -141,3 +130,14 @@ p {
     height: 100%;
     margin: 0;
 }
+
+
+/*.icon-wrap::before{
+    content: '';
+    position: absolute;
+    background: #b69b74;
+    bottom: 0rem;
+    left: 50%;
+    width: 2px;
+    height: 90px;
+}*/

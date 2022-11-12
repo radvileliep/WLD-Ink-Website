@@ -2,6 +2,9 @@ import React from 'react'
 import "./style.css"
 import tattoo from "../Header/tattoo.png";
 
+
+
+
 const Footer = () => {
     return (
     <>
@@ -40,11 +43,15 @@ const Footer = () => {
                     </div>
                         <div className='socials col-12'>
                             <div className='icon=wrap'>
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-instagram"></i>
+                                <a href='https://www.instagram.com/' target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href='https://www.facebook.com/' target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
                             </div>
                         </div>
-                </div>
+                    </div>
             </div>
         </div>
 
