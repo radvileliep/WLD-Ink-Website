@@ -294,3 +294,24 @@
     transition: 0.3s ease-in-out;
     right: -3.5rem;
 }
+
+
+/* SECTION - CARD SLIDER*/
+
+.container-fluid.slider{
+    display: flex;
+    justify-content: center;
+    background-color: #f1eeea;
+}
+
+.container.slider{
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.row.slider{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}

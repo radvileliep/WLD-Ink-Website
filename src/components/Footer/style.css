@@ -25,6 +25,7 @@
     width: inherit;
     align-items: top;
     justify-content: center;
+    position: relative;
 
 }
 #logo-name{

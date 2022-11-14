@@ -1,9 +1,12 @@
-import React from 'react'
-import "./home.css"
-import heroImg from "../Images/img1.jpg"
-import { Link } from 'react-router-dom'
-import heroImg1 from "../Images/img-hero.jpg"
-import panImg from "../Images/pano.jpg"
+import React from 'react';
+import "./home.css";
+import heroImg from "../Images/img1.jpg";
+import { Link } from 'react-router-dom';
+import heroImg1 from "../Images/img-hero.jpg";
+import panImg from "../Images/pano.jpg";
+import Carousel from "../../components/Carousel/Carousel"
+
+
 
 const Home = () => {
     return (
@@ -56,7 +59,7 @@ const Home = () => {
                                 <p className='par-gal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus odio, semper in mi eget, tempus gravida lacus. Vivamus in cursus lectus. Nullam accumsan turpis erat, nec mollis purus molestie at. Pellentesque sed ligula elementum, luctus quam ut, feugiat libero.
                                 </p>
                                 <div className='link-wrap'>
-                                    <Link to="/" style={{ textDecoration: 'none' }}>
+                                    <Link to="/gallery" style={{ textDecoration: 'none' }}>
                                         <h4 className='link-gallery'>
                                             View more 
                                         </h4>
@@ -70,6 +73,17 @@ const Home = () => {
         </section>
 
 {/*OUR TEAM SECTION*/}
+        <section>
+            <div className='container-fluid slider'>
+                <div className='container slider'>
+                    <div className='row slider'>
+                        <Carousel />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
 
 

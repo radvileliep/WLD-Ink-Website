@@ -42,7 +42,7 @@ const Footer = () => {
 
                     </div>
                         <div className='socials col-12'>
-                            <div className='icon=wrap'>
+                            <div className='icon-wrap'>
                                 <a href='https://www.instagram.com/' target="_blank">
                                     <i class="fa-brands fa-instagram footer"></i>
                                 </a>

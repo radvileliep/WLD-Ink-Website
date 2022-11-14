@@ -1,0 +1,116 @@
+
+.slider-card{
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.information-container{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(450px);
+    height: 420px;
+}
+
+.information-container:hover{
+    transform: translateY(220px);
+    transition: all 0.5s ease-in-out;
+    background-color: #000;
+}
+
+.card-name{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-work, .Email{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.6;
+    color: #ffffff;
+    font-weight: 400;
+}
+.card-work{
+    margin-bottom: 0;
+    color: #b69b74;
+}
+.Email{
+    padding: 0;
+}
+.team-socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-socials a{
+    font-size: 1.5rem;
+    color: #FFF;
+    padding-bottom: 8px;
+}
+.fa-facebook-f.car{
+    padding:0 20px;
+}
+.about-team{
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.6;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 15px;
+    overflow-wrap: break-word;
+}
+/**/
+.main-slider-container{
+    width: 1600px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    flex-direction: row;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+#slider::-webkit-scrollbar{
+    display: none;
+}
+.slider-icon.left, .slider-icon.right{
+    background-color: #FFF;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.5;
+}
+.slider-icon.left{
+    left: 0;
+}
+.slider-icon.right{
+    right: 0;
+}
+
+.slider-icon.left:hover, .slider-icon.right:hover{
+    opacity: 1;
+}
+.slider-card{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;;
+}
