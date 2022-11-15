@@ -10,15 +10,13 @@ import {MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const CardSlider = (props) => {
     const slides = [
-    {id:1, image:tat1, name:"Jonathan Wells", work:"-- Black and Grey work --", email:"j.wells@wld.com", par:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut lobortis sem, aliquam consequat nisi. Praesent ac scelerisque nulla. Maecenas sed magna quis leo fringilla molestie."},
-    {id:2, image:tat6, name: "Brooklyn Woods", work:"-- American Traditional work--", email:"brookwoods@wld.com", par:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut lobortis sem, aliquam consequat nisi. Praesent ac scelerisque nulla. Maecenas sed magna quis leo fringilla molestie."},
-    {id:3, image:tat5, name:"Lisa Juckston", work:"-- New School work --", email:"lisaJuckston@wld.com", par:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut lobortis sem, aliquam consequat nisi. Praesent ac scelerisque nulla. Maecenas sed magna quis leo fringilla molestie."},
-    {id:4, image:tat2, name:"Christy Spark", work:"-- Black and Grey work --", email:"christyy27@wld.com", par:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut lobortis sem, aliquam consequat nisi. Praesent ac scelerisque nulla. Maecenas sed magna quis leo fringilla molestie."}, 
-    {id:5, image:tat3, name:"Brandon Norris", work:"-- Tribal work --", email:"brannor@wld.com", par:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut lobortis sem, aliquam consequat nisi. Praesent ac scelerisque nulla. Maecenas sed magna quis leo fringilla molestie."}, 
-    {id:6, image:tat4, name:"Paul Schnores", work:"-- Neo Traditional work --", email:"schonres.paul@wld.com", par:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare risus vel tellus tempor tempor. Suspendisse ut lobortis sem, aliquam consequat nisi. Praesent ac scelerisque nulla. Maecenas sed magna quis leo fringilla molestie."}
+    {id:1, image:tat1, name:"Jonathan Wells", work:"-- Black and Grey work --", email:"j.wells@wld.com"},
+    {id:2, image:tat6, name: "Brooklyn Woods", work:"-- American Traditional work--", email:"brookwoods@wld.com"},
+    {id:3, image:tat5, name:"Lisa Juckston", work:"-- New School work --", email:"lisaJuckston@wld.com"},
+    {id:4, image:tat2, name:"Christy Spark", work:"-- Black and Grey work --", email:"christyy27@wld.com"}, 
+    {id:5, image:tat3, name:"Brandon Norris", work:"-- Tribal work --", email:"brannor@wld.com"}, 
+    {id:6, image:tat4, name:"Paul Schnores", work:"-- Neo Traditional work --", email:"schonres.paul@wld.com"}
 ];
-
-
 
     const slideLeft = () => {
         var slider = document.getElementById("slider");
@@ -43,7 +41,7 @@ const CardSlider = (props) => {
                                         <h3 className="card-name">{slide.name}</h3>
                                         <h4 className='card-work'>{slide.work}</h4>
                                         <p className='Email'>{slide.email}</p>
-                                        <p className='about-team'>{slide.par}</p>
+                                        <p className='about-team'>Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit. Fusce ornare risus vel tellus <br/> tempor tempor. Suspendisse ut lobortis sem, <br/> aliquam consequat nisi. Praesent ac scelerisque <br /> nulla. Maecenas sed magna quis leo fringilla <br /> molestie.</p>
                                         <div className='team-socials'>
                                             <a href='https://www.instagram.com/' target="_blank">
                                                 <i class="fa-brands fa-instagram car"></i>

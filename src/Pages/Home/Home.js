@@ -77,7 +77,8 @@ const Home = () => {
             <div className='container-fluid slider'>
                 <div className='container slider'>
                     <div className='row slider'>
-                        <Carousel />
+                        <h2 className='team' id="OurTeam">Our Team</h2>
+                        <Carousel/>
                     </div>
                 </div>
             </div>

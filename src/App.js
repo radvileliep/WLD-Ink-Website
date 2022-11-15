@@ -3,7 +3,6 @@ import './App.css';
 import Header from "./components/Header/Header"
 import { Route, Routes } from "react-router-dom"
 import Home from "./Pages/Home/Home"
-import Team from "./Pages/Team/Team"
 import Gallery from "./Pages/Gallery/Gallery"
 import Contacts from "./Pages/Contacts/Contacts"
 import Booking from "./Pages/Booking/Booking"
@@ -15,7 +14,6 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/ourTeam" element={<Team />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/booking" element={<Booking />} />

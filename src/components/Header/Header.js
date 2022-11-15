@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import React, { Component } from 'react';
 import tattoo from "./tattoo.png";
 import "./style.css";
@@ -10,7 +11,6 @@ class Header extends Component {
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
-    
     render() {
         return(
             <div>
@@ -32,9 +32,9 @@ class Header extends Component {
 
                         <div className={this.state.clicked ? "pages active" : "pages"}>
                             <ul className='nav-list'>
-                                <Link to="/ourTeam" style={{ textDecoration: 'none' }}> 
+                                <div onClick={() => window.location.replace("/#OurTeam")} > 
                                     <li className='nav-item'>Our Team</li>
-                                </Link>
+                                </div>
                                 <Link to="/gallery" style={{ textDecoration: 'none' }}> 
                                     <li className='nav-item'>Gallery</li>
                                 </Link>

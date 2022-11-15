@@ -1,0 +1,201 @@
+.container-fluid.book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1eeea;
+}
+.container.book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc((1600px / 12) * 10);
+}
+
+.row1, .row2{
+    flex: 12;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.row1{
+    margin-top: 30px;
+}
+.form-title{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1;
+    padding-bottom: 0.5rem;
+    color: #343434;
+    font-weight: 300;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.title-par{
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.4rem;
+    color: #343434;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    padding: 0 30px 48px 30px;
+}
+
+/*FORM*/
+
+.form.row3, .form.row4, .form.row5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.form-control{
+    padding: 0.5rem;
+    background-color: #f1eeea;
+    border: none;
+    border-bottom: 1px solid #343434;
+    border-radius: 0;
+    color: #343434;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.43;
+    min-height: 3.5em;
+    font-family: 'Muli', sans-serif;
+}
+.name, .surname, .email, .phone, .theme, .form.message{
+    flex: 6;
+    display: flex;
+}
+.name, .email, .theme{
+    margin-right: 40px;
+}
+.surname, .phone, .form.message{
+    margin-left: 40px;
+}
+.form.row5{
+    align-items: flex-end;
+}
+.form-control-label{
+    display: inline-flex;
+    padding-right: 3rem;
+    margin-bottom: 0;
+    padding-left: 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    text-align: start;
+}
+
+.form-check-inline{
+    margin-right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 0;
+}
+.form-check-inline:last-child{
+margin-right: 1.7rem;
+}
+.form-check-label{
+    color: #767676;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0.5rem;
+    font-family: 'Muli', sans-serif;
+}
+.form-check-input{
+    position: static;
+    margin-top: 0;
+    margin-right: 0.3125rem;
+    margin-left: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.43;
+}
+.button.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    cursor: pointer;
+    background: none;
+    border-radius: 3px;
+    padding: 0.6rem 1.6rem;
+    text-align: center;
+    border: 2px solid #816843;
+    margin: 0.4rem 0.8rem;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.submit:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.submit:before{
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #816843;
+}
+.submit:hover:before{
+    transition: 0.5s ease-in-out;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+.button-text3{
+    font-family: 'Muli', sans-serif;;
+    font-size: 16px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #816843;
+    font-style: normal;
+    margin: 0;
+    text-decoration: none;
+    padding-inline-start: 0;
+}
+.button-text3:hover{
+    color: #FFF;
+}
+.button.row{
+    margin-top: 3rem;
+}
+.par.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book.par{
+    color: #9c9485;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.4;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 991px){
+
+}

@@ -314,4 +314,22 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.team{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 5.2rem;
+    font-style: normal;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #232323;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 80px;
+
 }
