@@ -94,8 +94,7 @@
 .read-more:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: 0.5s ease-in-out;
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 }
 .read-more:before{
     transition: 0.5s ease-in-out;

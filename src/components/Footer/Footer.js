@@ -18,7 +18,7 @@ const Footer = () => {
                         <div className='address'>
                             <div className='card'>
                                 <div className='card-box'>
-                                    <h4>Address</h4>
+                                    <h4>Studio Address</h4>
                                     <p>Great st. 69, <br /> New York  </p>
                                 </div>
                             </div>
@@ -26,7 +26,7 @@ const Footer = () => {
                         <div className='contacts'>
                             <div className='card'>
                                 <div className='card-box'>
-                                    <h4>Contacts</h4>
+                                    <h4>Office Contacts</h4>
                                     <p>0161234567 support@WLDInk.com</p>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <div className='office'>
                             <div className='card'>
                                 <div className='card-box'>
-                                    <h4>Office</h4>
+                                    <h4>Office Address</h4>
                                     <p>Amazing blvd. 420, <br /> New York </p>
                                 </div>
                             </div>
