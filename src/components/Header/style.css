@@ -6,6 +6,7 @@
     align-items: center;
     background-color: #f1eeea;
     justify-content: center;
+    position: relative;
 }
 .container.navbar{
     width: 1600px;

@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='container footer'>
                 <div className='row footer'>
                     <div className='logo-img'>
-                        <img src={tattoo} id='logo-name'/>
+                        <img src={tattoo} id='logo-name' alt='logo-img'/>
                     </div>
                     <div className="cards">
                         <div className='address'>
@@ -43,10 +43,10 @@ const Footer = () => {
                     </div>
                         <div className='socials col-12'>
                             <div className='icon-wrap'>
-                                <a href='https://www.instagram.com/' target="_blank">
+                                <a href='https://www.instagram.com/' target="_blank" rel="noreferrer">
                                     <i class="fa-brands fa-instagram footer"></i>
                                 </a>
-                                <a href='https://www.facebook.com/' target="_blank">
+                                <a href='https://www.facebook.com/' target="_blank" rel="noreferrer">
                                     <i class="fa-brands fa-facebook-f footer"></i>
                                 </a>
                             </div>
