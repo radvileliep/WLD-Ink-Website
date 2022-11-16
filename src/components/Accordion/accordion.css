@@ -1,0 +1,57 @@
+
+
+
+
+.acco-title{
+    padding: 0.5rem 0rem;
+    margin-bottom: 0;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-top: 0;
+    font-weight: 500;
+    color: #343434;
+}
+.accordion{
+    width: 753px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item{
+    background-color: #eee8df;
+}
+
+.para-accordion{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #343434;
+    font-weight: 400;
+}
+
+.para-accordion.show{
+    height: auto;
+    max-height: 9999px;
+    transform: all 0.3s;
+    padding-bottom: 1.5rem;
+}
+
+.plus{
+    font-size: 2rem;
+    color: #b69b74;
+}

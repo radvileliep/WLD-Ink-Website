@@ -4,13 +4,11 @@
     height: 600px;
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
     overflow: hidden;
 }
-
 .information-container{
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #b69b7469;
     transform: translateY(450px);
     height: 420px;
 }
@@ -18,7 +16,7 @@
 .information-container:hover{
     transform: translateY(220px);
     transition: all 0.5s ease-in-out;
-    background-color: #000;
+    background-color: #b69b74;
 }
 
 .card-name{
@@ -42,7 +40,7 @@
 }
 .card-work{
     margin-bottom: 0;
-    color: #b69b74;
+    color: #FFF;
 }
 .Email{
     padding: 0;

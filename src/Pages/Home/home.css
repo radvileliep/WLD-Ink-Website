@@ -207,8 +207,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 60%;
-    height: 80%;
+    width: 65%;
+    height: 70%;
     object-fit: cover;
 }
 .container.gal-link{
@@ -216,6 +216,7 @@
     padding: 0 2rem;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 8rem;
 }
 .row.gal-link{
     padding: 0 1rem;
@@ -228,9 +229,6 @@
 .empty{
     flex: 6;
 }
-
-
-
 .info-title{
     font-family: 'Reem Kufi', sans-serif;
     font-size: 5.2rem;
@@ -302,20 +300,17 @@
     justify-content: center;
     background-color: #f1eeea;
 }
-
 .container.slider{
     width: 1600px;
     display: flex;
     justify-content: center;
 }
-
 .row.slider{
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
 }
-
 .team{
     font-family: 'Reem Kufi', sans-serif;
     font-size: 5.2rem;
@@ -330,5 +325,86 @@
     width: 100%;
     margin-top: 100px;
     margin-left: 80px;
+}
 
+/* SECTION - ACCORDION */
+
+.container-fluid.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee8df;
+}
+.container.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.row.about{
+    display: flex;
+    align-items: flex-start;
+    padding: 0 2rem;
+
+}
+.col1-about, .col2-about{
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: flex-start;
+}
+.acc-title{
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #343434;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+.acc-subtitle{
+    color: #343434;
+    font-size: 1.6rem;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    padding-bottom: 3rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+    font-style: normal;
+    line-height: 1.2;
+}
+.acc-image{
+    width: 600px;
+    height: auto;
+    align-self: left;
+}
+.acc-title2{
+    font-size: 2.1rem;
+    font-family: 'Reem Kufi', sans-serif;
+    font-weight: 700;
+    color: #343434;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.acc-par{
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.6;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #343434;
+    font-weight: 400;
+    text-align: start;
 }

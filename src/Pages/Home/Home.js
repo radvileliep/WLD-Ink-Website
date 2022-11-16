@@ -4,7 +4,9 @@ import heroImg from "../Images/img1.jpg";
 import { Link } from 'react-router-dom';
 import heroImg1 from "../Images/img-hero.jpg";
 import panImg from "../Images/pano.jpg";
-import Carousel from "../../components/Carousel/Carousel"
+import Carousel from "../../components/Carousel/Carousel";
+import Accordion from "../../components/Accordion/Accordion";
+import ImageAcc from "../Images/back2.jpg";
 
 
 
@@ -19,11 +21,9 @@ const Home = () => {
                         <h4 className='second-title'>Meet the new style perfection</h4>
                         <p className='par'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit at corporis ipsa, deserunt quam? Tenetur ex, placeat ad doloremque facilis dolore reprehenderit itaque iusto!</p>
                             <div className='hero-button'>
-                                <Link to="/" style={{ textDecoration: 'none' }}>
-                                    <button className='read-more'>
+                                    <button className='read-more' onClick={() => window.location.replace("/#process")} >
                                         <p className="button-text2">READ MORE</p>
                                     </button>
-                                </Link>
                             </div>
                     </div>
                     <div className='col-2 hero'>
@@ -70,6 +70,31 @@ const Home = () => {
                     </div>
                 </div>  
             </div> 
+        </section>
+
+{/*TEXT SECTION*/}
+
+<section>
+            <div className='container-fluid about'>
+                <div className='container about'>
+                    <div className='row about'>
+                        <div className='col1-about'>
+                            <h2 className='acc-title' id='process'>The tattoo process</h2>
+                            <h3 className='acc-subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus odio, semper in mi eget.</h3>
+                            <img src={ImageAcc} alt="accordion-image" className='acc-image'></img>
+                        </div>
+                        <div className='col2-about'>
+                            <h3 className='acc-title2'>Things to Know</h3>
+                            <p className='acc-par'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus odio, semper in mi eget, tempus gravida lacus. Vivamus in cursus lectus. Nullam accumsan turpis erat, nec mollis purus molestie at. Pellentesque sed ligula elementum, luctus quam ut, feugiat libero.</p>
+                            <h3 className='acc-title2'>How to Prepare</h3>
+                            <p className='acc-par'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse metus odio, semper in mi eget, tempus gravida lacus. Vivamus in cursus lectus. Nullam accumsan turpis erat, nec mollis purus molestie at. Pellentesque sed ligula elementum, luctus quam ut, feugiat libero.</p>
+                            <div className='accordion-wrap'>
+                                <Accordion />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 {/*OUR TEAM SECTION*/}

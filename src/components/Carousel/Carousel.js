@@ -1,10 +1,10 @@
 import React from 'react';
-import tat1 from "./tat1.jpg";
-import tat2 from "./tat2.jpg";
-import tat3 from "./tat3.jpg";
-import tat4 from "./tat4.jpg";
-import tat5 from "./tat5.jpg";
-import tat6 from "./tat6.jpg";
+import tat1 from "../../Pages/Images/tat1.jpg";
+import tat2 from "../../Pages/Images/tat2.jpg";
+import tat3 from "../../Pages/Images/tat3.jpg";
+import tat4 from "../../Pages/Images/tat4.jpg";
+import tat5 from "../../Pages/Images/tat5.jpg";
+import tat6 from "../../Pages/Images/tat6.jpg";
 import "./carousel.css"
 import {MdChevronLeft, MdChevronRight } from "react-icons/md";
 
@@ -36,7 +36,7 @@ const CardSlider = (props) => {
                     {
                     slides.map((slide, index) => {
                             return(
-                                <div className="slider-card" key={index} style={{backgroundImage:`url(${slide.image})`}}> 
+                                <div className="slider-card" key={index} style={{backgroundImage:`url(${slide.image})`}}>
                                     <div class="information-container">
                                         <h3 className="card-name">{slide.name}</h3>
                                         <h4 className='card-work'>{slide.work}</h4>
