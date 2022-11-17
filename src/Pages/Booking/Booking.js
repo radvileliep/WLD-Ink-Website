@@ -1,6 +1,7 @@
 import React from 'react';
 import "./booking.css";
 import { Link } from 'react-router-dom';
+import Button from "../../components/Button/Button";
 
 const Booking = () => {
     return (
@@ -64,9 +65,7 @@ const Booking = () => {
                 </form>
                 <div className='button row'>
                     <Link to="//" style={{ textDecoration: 'none' }}>
-                        <button className='submit'>
-                            <p className="button-text3">SUBMIT</p>
-                        </button>
+                        <Button buttonSize="btn--medium">Submit</Button>
                     </Link>
                 </div>
                 <div className='par row'>

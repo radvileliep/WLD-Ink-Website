@@ -7,7 +7,7 @@ import panImg from "../Images/pano.jpg";
 import Carousel from "../../components/Carousel/Carousel";
 import Accordion from "../../components/Accordion/Accordion";
 import ImageAcc from "../Images/back2.jpg";
-
+import Button from "../../components/Button/Button"
 
 
 const Home = () => {
@@ -21,9 +21,9 @@ const Home = () => {
                         <h4 className='second-title'>Meet the new style perfection</h4>
                         <p className='par'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit at corporis ipsa, deserunt quam? Tenetur ex, placeat ad doloremque facilis dolore reprehenderit itaque iusto!</p>
                             <div className='hero-button'>
-                                    <button className='read-more' onClick={() => window.location.replace("/#process")} >
-                                        <p className="button-text2">READ MORE</p>
-                                    </button>
+                                    <div className='read-more'>
+                                        <Button onClick={() => window.location.replace("/#process")} buttonSize="btn--large">Read more</Button>
+                                    </div>
                             </div>
                     </div>
                     <div className='col-2 hero'>

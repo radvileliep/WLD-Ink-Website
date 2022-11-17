@@ -1,7 +1,4 @@
 
-
-
-
 .acco-title{
     padding: 0.5rem 0rem;
     margin-bottom: 0;
@@ -12,7 +9,7 @@
     font-size: 1.6rem;
     line-height: 1;
     margin-top: 0;
-    font-weight: 500;
+    font-weight: 700;
     color: #343434;
 }
 .accordion{
@@ -33,7 +30,7 @@
 .para-accordion{
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: 0.3s linear;
     font-family: 'Muli', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -47,7 +44,7 @@
 .para-accordion.show{
     height: auto;
     max-height: 9999px;
-    transform: all 0.3s;
+    transform: 0.3s linear;
     padding-bottom: 1.5rem;
 }
 

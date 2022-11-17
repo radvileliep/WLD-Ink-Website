@@ -1,0 +1,54 @@
+
+.btn--primary{
+    font-family: 'Muli', sans-serif;
+    justify-content: center;
+    display: inline-flex;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    border: 2px solid #816843;
+    position: relative;
+    z-index: 1;
+    color: #816843;
+    font-size: 16px; 
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.btn--medium{
+    margin: 0.4rem 0.8rem;
+    padding: 0.6rem 1.6rem;
+}
+.btn--large{
+    margin: 0.4rem 0.8rem;
+    padding: 1.2rem 3.2rem;
+}
+
+
+.btn--primary:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: scale(1.1);
+    transition: 0.3s linear;
+    z-index: 2;
+    color: #FFF;
+}
+.btn--primary:before{
+    transition: 0.3s linear;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #816843;
+}
+.btn--primary:hover:before{
+    transition: 0.3s linear;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}

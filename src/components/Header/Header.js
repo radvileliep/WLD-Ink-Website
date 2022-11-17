@@ -3,6 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import React, { Component } from 'react';
 import tattoo from "./tattoo.png";
 import "./style.css";
+import Button from "../Button/Button";
 
 
 class Header extends Component {
@@ -42,10 +43,9 @@ class Header extends Component {
                                     <li className='nav-item'>Contacts</li>
                                 </Link>
                             </ul>
-                            <div className='navbar-button'>
-                                <Link to='/booking'> Book us
-                                </Link>
-                            </div> 
+                            <Link to='/booking' style={{ textDecoration: 'none' }}> 
+                            <Button buttonSize="btn--medium">Book us</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
