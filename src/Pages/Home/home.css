@@ -10,12 +10,13 @@
 .container.hero{
     display: flex;
     width: 1600px;
+    margin-bottom: 3rem;
 }
 .row.hero{
     display: flex;
     align-items: center;
+    margin-top: 4rem;
 }
-
 .col-1.hero{
     flex: 5;
     position: relative;
@@ -60,9 +61,6 @@
     margin-bottom: 1rem;
     padding-top: 0;
 }
-
-
-/*Right side of the hero starts here*/
 .col-2.hero{
     flex: 7;
     position: relative;
@@ -89,15 +87,6 @@
     line-height: 1;
     text-transform: uppercase;
 }
-/*.folow:before{
-    content: '';
-    position: absolute;
-    background: currentColor;
-    top: 50%;
-    left: -8.6rem;
-    width: 100px;
-    height: 2px;
-}*/
 .fa-instagram.hero{
     position: absolute;
     top: 5rem;
@@ -131,7 +120,17 @@
     height: 800px;
 }
 
-/*Link to gallery and info about it*/
+@media screen and (max-width: 960px){
+    .row.hero{
+        flex-direction: column-reverse;
+    }
+    .col-2.hero{
+        margin-bottom: 6rem;
+    }
+}
+
+
+/*SECTION - GALLERY*/
 .to-gal{
     padding-top: 90px;
     padding-bottom: 45px;
@@ -185,7 +184,6 @@
     margin-bottom: 0.5rem;
     color: #232323;
 }
-
 .par-gal{
     text-align: center;
     font-family: 'Muli', sans-serif;
@@ -203,7 +201,6 @@
     background-color: #b69b74;
     padding: 3rem 6rem;
 }
-
 .link-gallery{
     position: relative;
     width: fit-content;
@@ -236,7 +233,15 @@
     right: -3.5rem;
 }
 
-
+@media screen and (max-width: 960px){
+    .information{
+        flex: 12;
+    }
+    .empty{
+        width: 0;
+        flex: 0;
+    }
+}
 /* SECTION - CARD SLIDER*/
 
 .container-fluid.slider{

@@ -1,20 +1,32 @@
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import tattoo from "./tattoo.png";
 import "./style.css";
 import Button from "../Button/Button";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
-class Header extends Component {
-    state = { clicked: false }
-    
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
+
+const Header = () => {
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
+
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90){
+            setColor(true)
+        } else {
+            setColor(false)
+        }
     }
-    render() {
+
+    window.addEventListener("scroll", changeColor)
+
+
+    const closeMenu = () => setClick(false)
+    
         return(
-            <div>
+            <div className={color? "header-bg" : "header"}>
                 <div className='container-fluid navbar'>
                     <div className='container navbar'>
 
@@ -27,23 +39,24 @@ class Header extends Component {
                             </Link>
                         </div>
 
-                        <div className="menu-icon" onClick={this.handleClick}>
-                                <i className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
+                        <div className="menu-icon" onClick={handleClick}>
+                                {click ? (<FaTimes size={30}/>)
+                                : (<FaBars size={30} />)}
                         </div>
 
-                        <div className={this.state.clicked ? "pages active" : "pages"}>
-                            <ul className='nav-list'>
+                        <div className={click ? "pages active" : "pages"}>
+                            <ul className='nav-list' id="menu">
                                 <div onClick={() => window.location.replace("/#OurTeam")} > 
                                     <li className='nav-item'>Our Team</li>
                                 </div>
-                                <Link to="/gallery" style={{ textDecoration: 'none' }}> 
+                                <Link to="/gallery" style={{ textDecoration: 'none' }} onClick={closeMenu}> 
                                     <li className='nav-item'>Gallery</li>
                                 </Link>
-                                <Link to="/contacts" style={{ textDecoration: 'none'}}> 
+                                <Link to="/contacts" style={{ textDecoration: 'none'}} onClick={closeMenu}> 
                                     <li className='nav-item'>Contacts</li>
                                 </Link>
                             </ul>
-                            <Link to='/booking' style={{ textDecoration: 'none' }}> 
+                            <Link to='/booking' style={{ textDecoration: 'none' }} onClick={closeMenu}>  
                             <Button buttonSize="btn--medium">Book us</Button>
                             </Link>
                         </div>
@@ -52,6 +65,6 @@ class Header extends Component {
             </div>
         )
     }
-}
+
 
 export default Header

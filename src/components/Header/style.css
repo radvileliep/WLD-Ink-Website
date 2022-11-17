@@ -1,3 +1,22 @@
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: .3s linear;
+}
+.header-bg{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: .3s linear;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 20px 0px;
+}
 .container-fluid.navbar {
     margin: 0;
     padding: 0;
@@ -91,22 +110,28 @@ display: none;
         position: absolute;
         opacity: 1;
         right: -100%;
-        top: -190px;
+        top: -210px;
     }
     .pages.active {
         background-color: #f1eeea;
         opacity: 1;
         transition: all 0.3s ease-in-out;
-        z-index: 100;
-        height: 190px;
+        z-index: 999;
+        height: 210px;
         left: 0;
         top: 80px;
+        padding-bottom: 20px;
     }
     .nav-item{
-    text-align: center;
-    padding: 0.6rem;
-    width: 100%;
-    margin: 0;
+        text-align: center;
+        padding: 0.6rem;
+        width: 100%;
+        margin: 0;
+    }
+    .nav-item:hover::after{
+        width: 16%;
+        display: flex;
+        margin: auto;
     }
     .nav-list{
         width: 100%;
@@ -131,8 +156,8 @@ display: none;
     } 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1140px) {
     .pages{
-        flex-basis: 70%;
+        flex-basis: 75%;
     }
 }

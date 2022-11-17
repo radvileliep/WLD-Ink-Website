@@ -13,6 +13,7 @@ import Button from "../../components/Button/Button"
 const Home = () => {
     return (
     <>
+    {/*HERO  SECTION*/}
         <div className='container-fluid hero'>
             <div className='container hero'>
                 <div className='row hero'>
@@ -44,7 +45,7 @@ const Home = () => {
             </div>
         </div>
 
-{/*GALLERY LINK SECTION*/}
+{/*GALLERY  SECTION*/}
         <section className='to-gal'>
             <img src={panImg} alt="pan-to-gallery" className='pan-gal'></img>
             <div className='container-fluid gal-link'>
@@ -73,8 +74,7 @@ const Home = () => {
         </section>
 
 {/*TEXT SECTION*/}
-
-<section>
+        <section>
             <div className='container-fluid about'>
                 <div className='container about'>
                     <div className='row about'>

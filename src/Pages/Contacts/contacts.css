@@ -114,7 +114,16 @@
         display: block;
     }
     .contact-table{
-        width: 50%;
+        width: 40%;
+        margin: auto;
+    }
+}
+@media (max-width: 1400px){
+    .row.con{
+        display: block;
+    }
+    .contact-table{
+        width: 40%;
         margin: auto;
     }
 }
