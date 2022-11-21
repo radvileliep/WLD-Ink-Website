@@ -159,7 +159,7 @@
     padding: 0 2rem;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 }
 .row.gal-link{
     padding: 0 1rem;
@@ -242,6 +242,70 @@
         flex: 0;
     }
 }
+
+/* SECTION - WHY US */
+
+.container-fluid.why{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1eeea;
+}
+.container.why{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    margin-bottom: 6rem;
+}
+.row.why{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.why-col1, .why-col2, .why-col3{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    padding: 1rem;
+}
+.icon-wrap-why{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.fa-pencil, .fa-hand-holding-heart, .fa-palette{
+    font-size: 96px;
+    color: #b69b74;
+}
+.why-title{
+    text-align: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0.75rem;
+    color: #343434;
+}
+.why-text{
+    color: #767676;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 960px){
+    .row.why{
+        flex-direction: column;
+    }
+}
+
 /* SECTION - CARD SLIDER*/
 
 .container-fluid.slider{
@@ -357,3 +421,10 @@
     font-weight: 400;
     text-align: start;
 }
+
+@media screen and (max-width: 1435px){
+    .row.about{
+        flex-direction: column;
+    }
+}
+

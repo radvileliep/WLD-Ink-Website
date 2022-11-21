@@ -1,11 +1,13 @@
 import React from 'react';
 import "./contacts.css";
-
+import tattooVid from "../Images/tattoo-video.mp4";
 
 const Contacts = () => {
     return (
     <>
-    <div className='hero-back'></div>
+    <div className='hero-back'>
+        <video  className='video1' src={tattooVid} autoPlay loop muted />
+    </div>
     <div className='container-fluid con'>
         <div className='container con'>
             <div className='row con'>
